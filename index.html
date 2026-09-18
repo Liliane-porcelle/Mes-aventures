@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Porcelle XXX — Agence vidéo</title>
+  <meta name="description" content="Porcelle XXX — agence de production et publication vidéo.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="#">PORCELLE <span>XXX</span></a>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#videos">Vidéos</a>
+    <a href="#agence">L'agence</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn small" href="#contact">Nous contacter</a>
+</header>
+
+<main>
+<section id="accueil" class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">AGENCE • PRODUCTION • VIDÉO</p>
+    <h1>Des vidéos qui<br><span>marquent les esprits.</span></h1>
+    <p class="lead">Porcelle XXX accompagne les créateurs, marques et projets dans la production et la diffusion de contenus vidéo professionnels.</p>
+    <div class="actions">
+      <a class="btn" href="#videos">Voir les vidéos</a>
+      <a class="btn ghost" href="#agence">Découvrir l'agence</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="play">▶</div>
+    <p>Votre prochaine production</p>
+    <strong>COMMENCE ICI</strong>
+  </div>
+</section>
+
+<section id="videos" class="section">
+  <div class="section-head">
+    <div><p class="eyebrow">NOTRE CONTENU</p><h2>Dernières vidéos</h2></div>
+    <button class="filter active" data-filter="all">Tout</button>
+    <button class="filter" data-filter="production">Production</button>
+    <button class="filter" data-filter="studio">Studio</button>
+  </div>
+  <div class="grid" id="videoGrid">
+    <article class="video-card" data-category="production">
+      <div class="thumb t1"><span class="play">▶</span></div>
+      <div class="card-body"><span>Production</span><h3>Behind the scenes</h3><p>Présentation d'un projet de production.</p></div>
+    </article>
+    <article class="video-card" data-category="studio">
+      <div class="thumb t2"><span class="play">▶</span></div>
+      <div class="card-body"><span>Studio</span><h3>Session créative</h3><p>Un aperçu de notre travail en studio.</p></div>
+    </article>
+    <article class="video-card" data-category="production">
+      <div class="thumb t3"><span class="play">▶</span></div>
+      <div class="card-body"><span>Production</span><h3>Projet spécial</h3><p>Une réalisation signée Porcelle XXX.</p></div>
+    </article>
+  </div>
+</section>
+
+<section id="agence" class="about">
+  <div><p class="eyebrow">À PROPOS</p><h2>Une agence pensée pour raconter vos histoires.</h2></div>
+  <div><p>Porcelle XXX met l'image au centre de chaque projet. Notre objectif est de créer des contenus soignés, modernes et adaptés à votre public.</p><p>Production, publication et valorisation de vidéos : tout est réuni dans une expérience simple et professionnelle.</p></div>
+</section>
+
+<section id="contact" class="section contact">
+  <p class="eyebrow">PARLONS DE VOTRE PROJET</p>
+  <h2>Contactez Porcelle XXX</h2>
+  <form onsubmit="sendMessage(event)">
+    <input id="name" type="text" placeholder="Votre nom" required>
+    <input id="email" type="email" placeholder="Votre e-mail" required>
+    <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+    <button class="btn" type="submit">Envoyer le message</button>
+    <p id="status"></p>
+  </form>
+</section>
+</main>
+
+<footer><span>© 2026 Porcelle XXX</span><span>Agence vidéo professionnelle</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
